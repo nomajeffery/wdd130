@@ -21,29 +21,44 @@ header {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+}
+
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    padding: 0.5rem 1rem;
 }
 
 nav a:hover {
     text-decoration: underline;
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* ===== Headings ===== */
+h1 {
+    color: #030d16;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 /* ===== Paragraphs ===== */
 p {
     margin: 1rem 0;
-    padding: 0; 
+    padding: 0;
     line-height: 1.6;
 }
 
 /* ===== Main Content ===== */
 main {
     max-width: 900px;
-    width: 90%; /* Added for responsiveness */
+    width: 90%;
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 2rem;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -63,11 +78,16 @@ aside {
     width: 90%;
     max-width: 800px;
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #e8f4ff;
     color: #003366;
-    border: 1px solid #ccc;
+    border: 2px solid #b3d1ff;
     border-radius: 8px;
+}
+
+aside h2 {
+    color: #008075;
+    text-align: center;
 }
 
 aside img {
