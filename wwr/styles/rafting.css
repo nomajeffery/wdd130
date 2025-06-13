@@ -259,141 +259,148 @@ footer {
         flex: 1 1 100%;
     }
 }
-/* Contact Page Styles */
+/* Contact Page Styles with Accessibility Fixes */
 .contact-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
 }
 
 .contact-info, .our-team, .contact-form {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #beb9d6;
-    border-radius: 5px;
+margin-bottom: 40px;
+padding: 20px;
+background-color: #e6e6fa; /* Lighter lavender with better contrast /
+border-radius: 5px;
+color: #333333; / Dark gray for better readability */
 }
 
 .contact-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: center;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+align-items: center;
 }
 
 .contact-map iframe {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+width: 100%;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .employee-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 20px;
 }
 
 .employee-gallery figure {
-    flex: 1 1 200px;
-    text-align: center;
+flex: 1 1 200px;
+text-align: center;
 }
 
 .employee-gallery img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid var(--secondary-color);
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 50%;
+border: 3px solid #5a5a5a; /* Medium gray border */
 }
 
 .employee-gallery figcaption {
-    margin-top: 10px;
-    font-weight: bold;
-    color: var(--accent1-color);
+margin-top: 10px;
+font-weight: bold;
+color: #2a2a2a; /* Dark gray for proper contrast */
 }
 
 .contact-form form {
-    display: grid;
-    gap: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+display: grid;
+gap: 20px;
+max-width: 600px;
+margin: 0 auto;
 }
 
 .form-group {
-    display: grid;
-    gap: 5px;
+display: grid;
+gap: 5px;
 }
 
 .form-group label {
-    font-weight: bold;
-    color: var(--accent2-color);
+font-weight: bold;
+color: #2a2a2a; /* Dark gray for proper contrast */
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: var(--body-font);
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-family: var(--body-font);
+background-color: #ffffff;
+color: #333333;
 }
 
 .radio-group {
-    display: flex;
-    gap: 15px;
-    margin-top: 5px;
+display: flex;
+gap: 15px;
+margin-top: 5px;
 }
 
 .checkbox-group {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+display: flex;
+align-items: center;
+gap: 10px;
 }
 
 .submit-btn {
-    background-color: var(--accent1-color);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+background-color: #4a6fa5; /* Accessible blue */
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 5px;
+font-size: 1.1rem;
+cursor: pointer;
+transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
-    background-color: var(--secondary-color);
+background-color: #3a5a80; /* Darker blue on hover */
 }
 
 .wireframe-link {
-    color: var(--accent1-color);
-    text-decoration: none;
-    font-weight: bold;
+color: #4a6fa5; /* Matching the button color */
+text-decoration: none;
+font-weight: bold;
 }
 
 .wireframe-link:hover {
-    text-decoration: underline;
+text-decoration: underline;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .contact-details {
-        grid-template-columns: 1fr;
-    }
-    
-    .employee-gallery figure {
-        flex: 1 1 150px;
-    }
+.contact-details {
+grid-template-columns: 1fr;
+}
+
+.employee-gallery figure {    
+    flex: 1 1 150px;    
+}
+
 }
 
 @media (max-width: 480px) {
-    .radio-group {
-        flex-direction: column;
-        gap: 5px;
-    }
-    
-    .employee-gallery {
-        flex-direction: column;
-        align-items: center;
-    }
+.radio-group {
+flex-direction: column;
+gap: 5px;
 }
+
+.employee-gallery {    
+    flex-direction: column;    
+    align-items: center;    
+}
+
+}
+
+
