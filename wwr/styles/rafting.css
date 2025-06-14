@@ -21,7 +21,6 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-
 /* Header with CSS Grid */
 header {
     display: grid;
